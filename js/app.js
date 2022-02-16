@@ -1,4 +1,3 @@
-
 function inputValue(inputId){
     const inputField = document.getElementById(inputId);
     const inputValueText = inputField.value;
@@ -9,40 +8,35 @@ function inputValue(inputId){
 }
 
 document.getElementById('calculate-btn').addEventListener('click', function(){
+    // get income value
+    const incomeAmount = inputValue('income-input');
     // get food value
-
-    // const foodInput = document.getElementById('food-input');
-    // const foodAmountText = foodInput.value;
-    // const foodAmount = parseFloat(foodAmountText);
     const foodAmount = inputValue('food-input')
     // get rent value
-
-    // const rentInput = document.getElementById('rent-input');
-    // const rentAmountText = rentInput.value;
-    // const rentAmount = parseFloat(rentAmountText);
     const rentAmount = inputValue('rent-input')
     // get clothes value
-
-    // const clothesInput = document.getElementById('clothes-input');
-    // const clothesAmountText = clothesInput.value;
-    // const clothesAmount = parseFloat(clothesAmountText);
     const clothesAmount = inputValue('clothes-input')
     // set total expenses
     const totalExpenses = document.getElementById('total-expenses');
     const totalCost = foodAmount + rentAmount + clothesAmount;
     totalExpenses.innerText = totalCost;
-    // get income value
-    // const incomeInput = document.getElementById('income-input')
-    // const incomeAmountText = incomeInput.value;
-    // const incomeAmount = parseFloat(incomeAmountText);
-    const incomeAmount = inputValue('income-input')
     // set balance
     const totalBalance = document.getElementById('total-balance');
     const newBalance = incomeAmount - totalCost;
     totalBalance.innerText = newBalance;
-    // clear the input field
-    foodInput.value = '';
-    rentInput.value = '';
-    clothesInput.value = '';
-    incomeInput.value = '';
+})
+document.getElementById('save-btn').addEventListener('click', function(){
+    // saving amount calculation
+    const savingNumber = inputValue('saving-id');
+    const savingPercentage = savingNumber / 100;
+    const incomeAmount = inputValue('income-input');
+    const savingTotal = incomeAmount * savingPercentage;
+    // set saving amount
+    const totalSavingAmount = document.getElementById('total-saving');
+    totalSavingAmount.innerText = savingTotal;
+    // set remaining balance
+    const remainingBalance = document.getElementById('total-remaining');
+    const newRemainingBalance = incomeAmount - savingTotal;
+    remainingBalance.innerText = newRemainingBalance;
+
 })
