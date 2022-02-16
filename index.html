@@ -13,7 +13,7 @@
 <body>
     <!-- header start -->
     <header class="mt-4 pt-4">
-        <h1 class="text-center budget-text-color">My Monthly Budget
+        <h1 class="text-center budget-text-color fw-bold">My Monthly Budget
         <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -24,7 +24,7 @@
      <!-- header end -->
      <!-- main start -->
      <main>
-        <section class="container mt-2 pt-4">
+        <section class="container  pt-4">
             <div class="row d-flex justify-content-center  mt-4 pt-2 px-4">
               <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center mb-4  pb-4 order-1 order-sm-1 order-md-1 order-lg-1">
                 <img class="w-100 h-100 img-fluid mt-4 pt-4 rounded-3" src="images/budget2.jpg" alt="">
@@ -34,34 +34,34 @@
                 <div class="mb-4">
                   <h4 class="text-center mb-4 fw-bold">Income</h4>
                   <p>Income:
-                      <input type="text">
+                      <input id="income-input" type="text">
                   </p>
                   <h4 class="text-center my-3 fw-bold">Expenses</h4>
                   <span class="ms-3">Food:
-                      <input type="text">
+                      <input id="food-input" type="text">
                   </span>
                   <br>
                   <br>
                   <span class="ms-3">Rent :  
-                      <input type="text">
+                      <input id="rent-input" type="text">
                   </span>
                   <br>
                   <br>
                   <span>Clothes:
-                      <input type="text">
+                      <input id="clothes-input" type="text">
                   </span>
                   <br>
                   <br>
-                  <button type="button" class="btn btn-primary btn-lg text-center align-items-center ms-5 px-5">Calculate</button>
+                  <button id="calculate-btn" type="button" class="btn btn-primary btn-lg text-center align-items-center ms-5 px-5">Calculate</button>
                   <br>
-                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Total Expenses: <span>0000</span>
+                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Total Expenses: <span id="total-expenses">0000</span>
                    <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                    </span>
                   </p>
-                  <p class="text-center  fw-bold fs-4 ms-3 pb-4">Balance: <span>0000</span>
+                  <p class="text-center  fw-bold fs-4 ms-3 pb-4">Balance: <span id="total-balance">0000</span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
