@@ -28,66 +28,74 @@
             <div class="row d-flex justify-content-center  mt-4 pt-2 px-4">
               <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center mb-4  pb-4 order-1 order-sm-1 order-md-1 order-lg-1">
                 <img class="w-100 h-100 img-fluid mt-4 pt-4 rounded-3" src="images/budget2.jpg" alt="">
-                
               </div>
               <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center order-2 order-sm-2 order-md-2 order-lg-2">
                 <div class="mb-4">
+                  <!-- income input -->
                   <h4 class="text-center mb-4 fw-bold">Income</h4>
                   <p>Income:
-                      <input id="income-input" type="text">
+                      <input id="income-input" type="text" placeholder="Enter monthly income">
                   </p>
+                  <!-- Expenses input  -->
                   <h4 class="text-center my-3 fw-bold">Expenses</h4>
                   <span class="ms-3">Food:
-                      <input id="food-input" type="text">
+                      <input id="food-input" type="text" placeholder="Enter monthly food cost">
                   </span>
                   <br>
                   <br>
                   <span class="ms-3">Rent :  
-                      <input id="rent-input" type="text">
+                      <input id="rent-input" type="text" placeholder="Enter monthly rent cost">
                   </span>
                   <br>
                   <br>
                   <span>Clothes:
-                      <input id="clothes-input" type="text">
+                      <input id="clothes-input" type="text" placeholder="Enter monthly clothe cost">
                   </span>
                   <br>
                   <br>
+                  <!-- set calculate button -->
                   <button id="calculate-btn" type="button" class="btn btn-primary btn-lg text-center align-items-center ms-5 px-5">Calculate</button>
                   <br>
-                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Total Expenses: <span id="total-expenses">0000</span>
+                  <!-- set total expenses -->
+                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Total Expenses: <span id="total-expenses">0</span>
                    <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                     </svg>
                    </span>
                   </p>
-                  <p class="text-center  fw-bold fs-4 ms-3 pb-4">Balance: <span id="total-balance">0000</span>
-                    <span>
+                  <!-- set total balance -->
+                  <p class="text-center  fw-bold fs-4 ms-3 pb-4">Balance: <span id="total-balance">0</span>
+                      <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                       </span>
+                        </svg>
+                      </span>
                   </p>
+                  <!-- save input -->
                   <span>Save:</span>
-                  <input id="saving-id" type="text">
+                  <input id="saving-id" type="text"  placeholder="Enter monthly saving">
                   <span> % </span>
                   <br>
                   <br>
+                  <!-- set save button -->
                   <button id="save-btn" type="button" class="btn btn-primary text-center align-items-center ms-5 px-5 ">Save</button>
                   <br>
-                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Saving Amount: <span id="total-saving">0000</span>
-                    <span>
+                  <!-- set saving amount -->
+                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Saving Amount: <span id="total-saving">0</span>
+                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                       </span>
+                        </svg>
+                      </span>
                   </p>
-                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Remaining Balance: <span id="total-remaining">0000</span>
-                    <span>
+                  <!-- set remaining balance -->
+                  <p class="text-center  fw-bold fs-4 ms-3 mt-3">Remaining Balance: <span id="total-remaining">0</span>
+                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" class="text-warning bg-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                       </span>
+                        </svg>
+                      </span>
                   </p>
                 </div>
              </div>

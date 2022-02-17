@@ -4,14 +4,12 @@ function inputValue(inputId){
     const inputValueNumber = parseFloat(inputValueText);
     // error handling
     if(inputValueNumber < 0){
-        alert('Please, give a positive value in the input field')
+        alert('Please, give a positive value in the input field');
     }
     // error handling
     if(isNaN(inputValueNumber)){
         alert('Please, give a number value in the input field.')
     }
-    // clear input field
-    // inputField.value = '';
     return inputValueNumber;
 }
 
@@ -19,11 +17,11 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     // get income value
     const incomeAmount = inputValue('income-input');
     // get food value
-    const foodAmount = inputValue('food-input')
+    const foodAmount = inputValue('food-input');
     // get rent value
-    const rentAmount = inputValue('rent-input')
+    const rentAmount = inputValue('rent-input');
     // get clothes value
-    const clothesAmount = inputValue('clothes-input')
+    const clothesAmount = inputValue('clothes-input');
     // set total expenses
     const totalExpenses = document.getElementById('total-expenses');
     const totalCost = foodAmount + rentAmount + clothesAmount;
@@ -43,11 +41,11 @@ document.getElementById('save-btn').addEventListener('click', function(){
     // get income value
     const incomeAmount = inputValue('income-input');
     // get food value
-    const foodAmount = inputValue('food-input')
+    const foodAmount = inputValue('food-input');
     // get rent value
-    const rentAmount = inputValue('rent-input')
+    const rentAmount = inputValue('rent-input');
     // get clothes value
-    const clothesAmount = inputValue('clothes-input')
+    const clothesAmount = inputValue('clothes-input');
     // set total expenses
     const totalExpenses = document.getElementById('total-expenses');
     const totalCost = foodAmount + rentAmount + clothesAmount;
@@ -60,7 +58,6 @@ document.getElementById('save-btn').addEventListener('click', function(){
     const savingNumber = inputValue('saving-id');
     const savingPercentage = savingNumber / 100;
     const savingTotal = Math.round (incomeAmount * savingPercentage);
-    
     // set saving amount
     const totalSavingAmount = document.getElementById('total-saving');
     totalSavingAmount.innerText = savingTotal;
