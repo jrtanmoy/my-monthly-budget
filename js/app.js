@@ -8,7 +8,9 @@ function inputValue(inputId){
     }
     // error handling
     if(isNaN(inputValueNumber)){
-        alert('Please, give a number value in the input field.')
+        alert('Please, give a number value in the input field.');
+        totalExpenses.innerText = 0;
+        totalBalance.innerText = 0;
     }
     return inputValueNumber;
 }
@@ -32,7 +34,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     totalBalance.innerText = newBalance;
     // error handling
     if(totalCost > incomeAmount){
-        alert("You don't have enough money to spend.");
+        alert("Sorry, you don't have enough money for your expenses.");
         totalExpenses.innerText = 0;
         totalBalance.innerText = 0;
     }
