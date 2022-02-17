@@ -1,3 +1,4 @@
+// set function
 function inputValue(inputId){
     const inputField = document.getElementById(inputId);
     const inputValueText = inputField.value;
